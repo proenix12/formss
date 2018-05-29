@@ -1,0 +1,38 @@
+.tooltipLink {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url("http://canelledesign.com/wp-content/uploads/2018/04/icons.png");
+	background-position: -268px -241px;
+	cursor: pointer;
+	margin-left: 10px;
+	position: relative;
+}
+.balloon {
+	position: absolute !important;
+    color: #fff;
+    font-family: Lato,Verdana,sans-serif;
+    font-size: 14px;
+    background-color: #008acf;
+    z-index: 1;
+    min-width: 300px;
+    width: auto;
+    bottom: 30px;
+    border-radius: 4px;
+    padding: 14px;
+    left: 8px;
+    display: none;
+
+}
+
+.balloon::before {
+	content: ' ';
+    border-left: 27px solid #008acf;
+    border-top: 14px solid #008acf;
+    border-right: 27px solid transparent;
+    border-bottom: 14px solid transparent;
+    position: absolute;
+    bottom: -15px;
+    left: 10px;
+
+}
